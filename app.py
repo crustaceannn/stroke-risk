@@ -5,7 +5,7 @@ left_co, cent_co,last_co = st.columns([3, 3, 3])
 with cent_co:
     st.image("https://genme.kalgeninnolab.co.id/_next/image?url=%2FLogo%2FLogo%20StrokeGENME.png&w=384&q=75", width=750)
 # st.title("🧠 Interactive Stroke Risk Calculator")
-st.markdown("<h1 style='text-align: center; color: #da7342;'>🧠 STROKEGENME Risk Calculator</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #da7342;'>🧠 Stroke Risk Calculator</h1>", unsafe_allow_html=True)
 
 st.markdown('<div style="text-align: justify;">Welcome! This short questionnaire will help you estimate your <strong>relative risk of stroke</strong> based on </br>several well-known lifestyle and health factors. It is <strong>not</strong> a medical diagnosis—always consult a </br>qualified professional about your personal health.</div>', unsafe_allow_html=True)
 

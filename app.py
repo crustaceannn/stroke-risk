@@ -1,16 +1,13 @@
 import streamlit as st
 
 st.set_page_config(page_title="Stroke Risk Calculator", page_icon="🧠", layout="centered")
+left_co, cent_co,last_co = st.columns([3, 3, 3])
+with cent_co:
+    st.image("https://genme.kalgeninnolab.co.id/_next/image?url=%2FLogo%2FLogo%20StrokeGENME.png&w=384&q=75", width=750)
+# st.title("🧠 Interactive Stroke Risk Calculator")
+st.markdown("<h1 style='text-align: center; color: #da7342;'>🧠 STROKEGENME Risk Calculator</h1>", unsafe_allow_html=True)
 
-st.title("🧠 Interactive Stroke Risk Calculator")
-
-st.markdown(
-    """
-    Welcome! This short questionnaire will help you estimate your **relative risk of stroke** based on
-    several well-known lifestyle and health factors. It is **not** a medical diagnosis—always consult a
-    qualified professional about your personal health.
-    """
-)
+st.markdown('<div style="text-align: justify;">Welcome! This short questionnaire will help you estimate your <strong>relative risk of stroke</strong> based on </br>several well-known lifestyle and health factors. It is <strong>not</strong> a medical diagnosis—always consult a </br>qualified professional about your personal health.</div>', unsafe_allow_html=True)
 
 st.markdown("---")
 
@@ -91,10 +88,14 @@ if st.button("✨ Calculate My Risk"):
         """
         **What next?**
 
-        - Even a **low score** doesn’t guarantee you’re risk-free—maintain healthy habits.  
+        - Even a **low score** doesn’t guarantee you’re risk‑free—maintain healthy habits.  
         - If you scored **moderate or high**, consider consulting a healthcare professional for personalized advice.  
-        - Everyone can benefit from regular physical activity, balanced nutrition, and routine health check-ups.
-        """
-    )
+        - Everyone can benefit from regular physical activity, balanced nutrition, and routine health check‑ups.
 
+        <br>
+        <strong style='color:#da7342;'>STROKEGENME</strong> test is a genetic test designed to assess risk and predisposition to stroke, provide valuable insights into your genetic risk.<br>
+        <strong>Take your test now and get your risk profile, including a personalized report and free consultation with medical experts.</strong>
+        """,
+        unsafe_allow_html=True,
+    )
 st.markdown("---")
